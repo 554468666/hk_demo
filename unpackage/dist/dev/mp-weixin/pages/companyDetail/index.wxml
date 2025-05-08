@@ -1,0 +1,1 @@
+<view class="container data-v-e5285970"><view class="data-v-e5285970"><text class="data-v-e5285970">{{"公司名称: "+company.name}}</text><text class="data-v-e5285970">{{"地址: "+company.address}}</text><text class="data-v-e5285970">{{"电话: "+company.phone}}</text><text class="data-v-e5285970">{{"简介: "+company.description}}</text></view></view>

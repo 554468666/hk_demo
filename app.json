@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "/pages/home/index",
+    "/pages/userManage/index",
+    "/pages/serviceList/index",
+    "/pages/order/index",
+    "/pages/mine/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "家政服务",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/image/home.png",
+        "selectedIconPath": "static/image/home-active.png"
+      },
+      {
+        "pagePath": "pages/userManage/index",
+        "text": "用户管理",
+        "iconPath": "static/image/user.png",
+        "selectedIconPath": "static/image/user-active.png"
+      },
+      {
+        "pagePath": "pages/serviceList/index",
+        "text": "服务列表",
+        "iconPath": "static/image/service.png",
+        "selectedIconPath": "static/image/service1.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单列表",
+        "iconPath": "static/image/order.png",
+        "selectedIconPath": "static/image/order-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/image/mine.png",
+        "selectedIconPath": "static/image/mine-active.png"
+      }
+    ]
+  }
+}

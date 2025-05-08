@@ -1,0 +1,1 @@
+<view class="container"><block wx:for="{{services}}" wx:for-item="service" wx:for-index="__i0__" wx:key="id"><view><text>{{service.name}}</text><button data-event-opts="{{[['tap',[['orderService',['$0'],[[['services','id',service.id]]]]]]]}}" bindtap="__e">订购</button></view></block></view>

@@ -1,0 +1,1 @@
+<view class="container"><textarea placeholder="请输入您的意见或建议" data-event-opts="{{[['input',[['__set_model',['','feedback','$event',[]]]]]]}}" value="{{feedback}}" bindinput="__e"></textarea><button data-event-opts="{{[['tap',[['submitFeedback',['$event']]]]]}}" bindtap="__e">提交</button></view>

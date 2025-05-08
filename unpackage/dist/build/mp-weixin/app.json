@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/userManage/index",
+    "pages/serviceList/index",
+    "pages/order/index",
+    "pages/evaluate/index",
+    "pages/serviceManage/index",
+    "pages/orderRecord/index",
+    "pages/orderDetail/index",
+    "pages/mine/index",
+    "pages/member/index",
+    "pages/feedback/index",
+    "pages/contact/index",
+    "pages/companyDetail/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "家政服务小程序",
+    "backgroundColor": "#eeeeee"
+  },
+  "usingComponents": {}
+}

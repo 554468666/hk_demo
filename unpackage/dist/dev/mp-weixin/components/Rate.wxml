@@ -1,0 +1,1 @@
+<view class="rate data-v-c531028a"><block wx:for="{{5}}" wx:for-item="index" wx:for-index="__i0__" wx:key="*this"><view data-event-opts="{{[['tap',[['setRate',['$0'],[[[5,'',__i0__]]]]]]]}}" bindtap="__e" class="data-v-c531028a"><image src="{{index<=value?activeStar:inactiveStar}}" class="data-v-c531028a"></image></view></block></view>

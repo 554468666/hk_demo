@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "服务评价",
+  "usingComponents": {
+    "rate": "/components/Rate"
+  }
+}

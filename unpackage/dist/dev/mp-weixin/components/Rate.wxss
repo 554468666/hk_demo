@@ -1,0 +1,9 @@
+
+.rate.data-v-c531028a {
+  display: flex;
+}
+.rate image.data-v-c531028a {
+  width: 40rpx;
+  height: 40rpx;
+}
+

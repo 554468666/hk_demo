@@ -1,0 +1,64 @@
+{
+    "appid" : "__UNI__F091651",
+    "name" : "家政服务小程序",
+    "version" : {
+        "name" : "1.0.0"
+    },
+    "description" : "一个提供家政服务的小程序",
+    "pages" : [
+        "pages/home/index",
+        "pages/userManage/index",
+        "pages/serviceList/index",
+        "pages/order/index",
+        "pages/evaluate/index",
+        "pages/serviceManage/index",
+        "pages/orderRecord/index",
+        "pages/orderDetail/index",
+        "pages/mine/index",
+        "pages/member/index",
+        "pages/feedback/index",
+        "pages/contact/index"
+    ],
+    "window" : {
+        "navigationBarBackgroundColor" : "#ffffff",
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "家政服务小程序",
+        "backgroundColor" : "#eeeeee"
+    },
+    "tabBar" : {
+        "color" : "#7A7E83",
+        "selectedColor" : "#3cc51f",
+        "backgroundColor" : "#ffffff",
+        "borderStyle" : "black",
+        "list" : [
+            {
+                "pagePath" : "pages/home/index",
+                "text" : "首页",
+                "iconPath" : "static/home.png",
+                "selectedIconPath" : "static/home-active.png"
+            },
+            {
+                "pagePath" : "pages/serviceList/index",
+                "text" : "服务",
+                "iconPath" : "static/service.png",
+                "selectedIconPath" : "static/service-active.png"
+            },
+            {
+                "pagePath" : "pages/orderRecord/index",
+                "text" : "订单",
+                "iconPath" : "static/order.png",
+                "selectedIconPath" : "static/order-active.png"
+            },
+            {
+                "pagePath" : "pages/mine/index",
+                "text" : "我的",
+                "iconPath" : "static/mine.png",
+                "selectedIconPath" : "static/mine-active.png"
+            }
+        ]
+    },
+    "versionName" : "v1",
+    "mp-weixin" : {
+        "appid" : "wx60dce261b72c4030"
+    }
+}
