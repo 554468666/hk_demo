@@ -46,12 +46,6 @@
         "selectedIconPath": "/static/image/service1.png"
       },
       {
-        "pagePath": "pages/order/index",
-        "text": "订单列表",
-        "iconPath": "static/image/order.png",
-        "selectedIconPath": "/static/image/order-active.png"
-      },
-      {
         "pagePath": "pages/mine/index",
         "text": "我的",
         "iconPath": "static/image/mine.png",

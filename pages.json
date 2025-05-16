@@ -9,7 +9,8 @@
     {
       "path": "pages/userManage/index",
       "style": {
-        "navigationBarTitleText": "用户管理"
+        "navigationBarTitleText": "用户管理",
+		"tabBarHidden": true // 默认隐藏，由页面逻辑控制
       }
     },
     {
@@ -21,7 +22,7 @@
     {
       "path": "pages/order/index",
       "style": {
-        "navigationBarTitleText": "订购页面"
+        "navigationBarTitleText": "订单页面"
       }
     },
     {
@@ -108,12 +109,6 @@
         "text": "服务列表",
         "iconPath": "static/image/service.png",
         "selectedIconPath": "/static/image/service1.png"
-      },
-      {
-        "pagePath": "pages/order/index",
-        "text": "订单列表",
-        "iconPath": "static/image/order.png",
-        "selectedIconPath": "/static/image/order-active.png"
       },
       {
         "pagePath": "pages/mine/index",

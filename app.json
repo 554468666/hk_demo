@@ -1,10 +1,10 @@
 {
   "pages": [
-    "/pages/home/index",
-    "/pages/userManage/index",
-    "/pages/serviceList/index",
-    "/pages/order/index",
-    "/pages/mine/index"
+    "pages/home/index",
+    "pages/userManage/index",
+    "pages/serviceList/index",
+    "pages/order/index",
+    "pages/mine/index"
   ],
   "window": {
     "navigationBarTitleText": "家政服务",
@@ -26,6 +26,7 @@
       {
         "pagePath": "pages/userManage/index",
         "text": "用户管理",
+		"wx:if": "{{userRole !== 1}}",
         "iconPath": "static/image/user.png",
         "selectedIconPath": "static/image/user-active.png"
       },

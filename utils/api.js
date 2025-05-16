@@ -9,7 +9,14 @@ export const queryUser = (data) => uni.request({ url: `${BASE_URL}/api/users/que
 export const addService = (data) => uni.request({ url: `${BASE_URL}/api/services/add`, method: 'POST', data });
 export const deleteService = (id) => uni.request({ url: `${BASE_URL}/api/services/delete/${id}`, method: 'DELETE' });
 export const updateService = (data) => uni.request({ url: `${BASE_URL}/api/services/update/${id}`, method: 'PUT', data });
-export const queryService = (data) => uni.request({ url: `${BASE_URL}/api/services/query`, method: 'GET', data });
+export const queryService = (data) => uni.request({
+  url: `${BASE_URL}/api/services/query`,
+  method: 'POST',
+  data: JSON.stringify(data), // 将数据转换为JSON字符串
+  header: {
+    'content-type': 'application/json' // 设置请求头为JSON
+  }
+  });
 export const queryHotService = (data) => uni.request({
   url: `${BASE_URL}/api/services/query/hot`,
   method: 'POST',
