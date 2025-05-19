@@ -79,20 +79,26 @@ export default {
     };
   },
   onShow() {
-      const userRole = this.$store.state.userRole
-      
+      const app = getApp();
+      const userRole = app.globalData.userRole;
+  
       // 管理员角色显示所有 tabBar 项
       if (userRole === 'admin') {
-        uni.showTabBar()
+        uni.showTabBar();
+        uni.setTabBarItem({
+          index: 1,
+          text: '用户管理',
+          iconPath: 'static/image/user.png',
+          selectedIconPath: 'static/image/user-active.png'
+        });
       } else {
         // 普通用户隐藏管理员 tab 项
-        uni.hideTabBarRedDot({ index: 2 }) // 隐藏管理 tab 的红点
         uni.setTabBarItem({
-          index: 2,
-          text: '用户管理',
-          iconPath: '././static/image/user.png', // 透明图标
-          selectedIconPath: '././static/image/user-active.png'
-        })
+          index: 1,
+          text: '',
+          iconPath: 'static/image/transparent.png',
+          selectedIconPath: 'static/image/transparent.png'
+        });
       }
     },
   async onLoad() {
@@ -116,7 +122,10 @@ export default {
         const loginRes = await login({ encryptedData, iv, rawData, signature });
         if (loginRes.statusCode === 200) {
           this.userInfo = loginRes.data;
+		  app.globalData.userRole = this.userInfo.userRole; // 设置用户角色到全局变量
           console.log(this.userInfo);
+		  // 根据角色动态设置 tabBar 项
+		  this.onShow();
         } else {
 			console.log('2');
           uni.showToast({ title: '登录失败', icon: 'none' });

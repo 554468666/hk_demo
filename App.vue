@@ -21,7 +21,8 @@ export default {
   onLaunch: function() {
     console.log('App Launch');
     this.globalData = {
-	  userRole: '1',
+		
+	  userRole: null,
       service: null,
       userId: null,
       // 其他全局变量
